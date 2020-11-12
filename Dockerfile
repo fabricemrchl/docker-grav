@@ -58,7 +58,7 @@ ENV GRAV_VERSION latest
 WORKDIR /var/www
 RUN curl -o grav-admin.zip -SL https://getgrav.org/download/skeletons/landio-site/${GRAV_VERSION} && \
     unzip grav-admin.zip && \
-    mv -T /var/www/grav-admin /var/www/html && \
+    mv -T /var/www/grav-skeleton-landio-site /var/www/html && \
     rm grav-admin.zip
 
 # Create cron job for Grav maintenance scripts
